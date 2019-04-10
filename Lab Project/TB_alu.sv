@@ -1,10 +1,10 @@
 `timescale 1ns/1ps
-module test_alu32 ();
-logic [31:0] A, B;
+module TB_alu ();
+logic [31:0] srca, srcb;
 logic [2:0] alucontrol;
-logic [31:0] Y;
-logic Z;
-alu32 myalu (srca, srcb, alucontrol,Y,Z);
+logic [31:0] aluout;
+logic zero;
+alu32 myalu (srca, srcb, alucontrol, aluout, zero);
 initial begin
 	// ADD
 	srca = 32'h00000000; srcb = 32'h00000000; alucontrol = 3'h2; #10;
