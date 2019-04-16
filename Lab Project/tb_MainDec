@@ -28,6 +28,7 @@ begin
 	op=6'b000100 #10;
 	op=6'b001000 #10;
 	op=6'b000010 #10;
+end	
 $final
 
 endmodule
