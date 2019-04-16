@@ -1,7 +1,7 @@
-module alu (input  [31:0] srca, srcb,
-			input  [2:0]  alucontrol,
-			output [31:0] aluout,
-			output 		  zero);
+module alu (input logic  [31:0] srca, srcb,
+			input logic  [2:0]  alucontrol,
+			output logic [31:0] aluout,
+			output logic	    zero);
 	logic [31:0] srcBout, Sum;
 	
 	assign srcBout = F[2] ? ~srcb : srcb;
