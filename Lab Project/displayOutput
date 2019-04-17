@@ -4,6 +4,6 @@ module displayOutput(
 );
 seven_seg SEG0 (SW[3:0], HEX0);
 seven_seg SEG1 (SW[7:4], HEX1);
-seven_seg SEG2 (SW[11:8], HEX1);
-seven_seg SEG3 (SW[15:12], HEX1);
+seven_seg SEG2 (SW[11:8], HEX2);
+seven_seg SEG3 (SW[15:12], HEX3);
 endmodule
