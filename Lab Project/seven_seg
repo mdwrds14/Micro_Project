@@ -1,6 +1,6 @@
 module seven_seg(
- input [3:0] SW, // 4 - Slide Switches
- output reg [6:0] HEX0 // Seven Segment Digits
+ input logic [3:0] SW, // 4 - Slide Switches
+ output logic [6:0] HEX0 // Seven Segment Digits
 );
 always
   case (SW[3:0])
