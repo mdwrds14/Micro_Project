@@ -1,0 +1,9 @@
+module displayOutput(
+ input [15:0] SW, // 4 - Slide Switches
+ output [6:0] HEX0, HEX1, HEX2, HEX3 // Seven Segment Digits
+);
+seven_seg SEG0 (SW[3:0], HEX0);
+seven_seg SEG1 (SW[7:4], HEX1);
+seven_seg SEG2 (SW[11:8], HEX1);
+seven_seg SEG3 (SW[15:12], HEX1);
+endmodule
