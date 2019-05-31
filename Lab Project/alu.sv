@@ -15,4 +15,4 @@ module alu (input logic  [31:0] srca, srcb,
 		2'b10: aluout <= Sum;
 		2'b11: aluout <= Sum[31];
 	endcase
-endmodule
+endmodule // end
