@@ -39,7 +39,4 @@ initial begin
 	op = 6'b00_0010; #10;
 $finish;
 end
-endmodule
-
-
-
+endmodule // end
